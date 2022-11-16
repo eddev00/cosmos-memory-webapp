@@ -1,0 +1,12 @@
+@font-face {
+  font-family: bruno;
+  src: url("../src//fonts//Bruno\ Ace\ Regular.ttf");
+}
+
+body {
+  margin: 0;
+  background: #010101;
+  font-family: bruno, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
