@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import hero from "../../images/Hero.gif";
-import "./index.scss";
+import style from "../Home/index.module.scss";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="container">
-      <div className="left">
-        <div className="text">
+    <div className={style.container}>
+      <div className={style.left}>
+        <div className={style.text}>
           <h1>Discover The Cosmos</h1>
           <p>
             #Each day a different image or #photograph of our fascinating
@@ -23,10 +23,10 @@ const Home = () => {
             pathname: "/PickDate",
           }}
         >
-          <div className="hero_button">Explore </div>
+          <div className={style.hero_button}>Explore </div>
         </Link>
       </div>
-      <div className="right">
+      <div className={style.right}>
         <img src={hero} />
       </div>
     </div>

@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 80%;font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.01em;
+  
+    gap: 30px;
+    .display_date{
+        cursor: pointer;
+        display: flex;
+        gap: 40px;
+        font-weight: 400;
+font-size: 17.2222px;
+line-height: 21px;
+justify-content: center;
+align-items: center;
+        .data{
+            
+            color: black;
+            background: white;
+            border-radius: 114.815px;
+            
+            display: flex;
+            padding: 5px 20px;
+                
+            font-weight: 400;
+            font-size: 17.2222px;
+            line-height: 21px;
+            
+
+            }
+        }
+        input{
+            width: 1px;
+            height: 1px;
+            visibility: hidden;
+        }
+    }
+
+    
+   
+    
