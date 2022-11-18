@@ -20,24 +20,31 @@
     .top{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .title{
             font-weight: 400;
             font-size: 36px;
             line-height: 43px;
-            
+            max-width: 80%;
             color: #DFDCA7;
         }
         .date_switch{
             font-weight: 400;
             font-size: 15px;
             line-height: 18px;
+            gap: 20px;
+            display: flex;
+            .date_cont{
+                
+            }
         }
 
     }
     .middle{
+        position: relative;
         display: flex;
         justify-content: space-between;
-        height: 470px;
+        max-height: 470px;
         .image{
             display: flex;
             flex-direction: column;
@@ -69,6 +76,16 @@
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
             transition: color .3s ease;
             
+        }
+        .image{
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           img{
+            max-height: 90%;
+           }
+
         }
 
     }

@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./index.module.scss";
 import banner from "../../images/ze.png";
 import { useLocation } from "react-router-dom";
 const DisplayData = () => {
   const location = useLocation();
   const data = location.state.data;
+  const arrayDate = () => {
+    const array = data.date.split("-");
+    setDate(array);
+  };
+  useEffect(() => {
+    arrayDate();
+  });
+
   console.log(data.explanation);
+  const [date, setDate] = useState([]);
 
   return (
     <div className={style.container}>
       <div className={style.top}>
         <div className={style.title}>{data.title}</div>
-        <div className={style.date_switch}>DEC /12 /2012</div>
+        <div className={style.date_switch}>
+          <div className={style.date_cont}>{date[0]}</div>
+          <div className={style.date_cont}>{date[1]}</div>
+          <div className={style.date_cont}>{date[2]}</div>
+        </div>
       </div>
       <div className={style.middle}>
         <div className={style.text}>
@@ -19,12 +32,12 @@ const DisplayData = () => {
           <p>{data.explanation}</p>
         </div>
         <div className={style.image}>
-          <img src={banner} />
+          <img src={data.url} />
         </div>
       </div>
       <div className={style.footer}>
-        <div className={style.copyright}>copyright: Ryan Han</div>
-        <div className={style.date}>2022/08/11</div>
+        <div className={style.copyright}>{data.copyright}</div>
+        <div className={style.date}>{data.date}</div>
       </div>
     </div>
   );
