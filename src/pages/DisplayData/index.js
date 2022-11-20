@@ -4,26 +4,21 @@ import banner from "../../images/ze.png";
 import { useLocation } from "react-router-dom";
 const DisplayData = () => {
   const location = useLocation();
+
   const data = location.state.data;
+
   const arrayDate = () => {
     const array = data.date.split("-");
-    setDate(array);
   };
-  useEffect(() => {
-    arrayDate();
-  });
-
-  console.log(data.explanation);
-  const [date, setDate] = useState([]);
 
   return (
     <div className={style.container}>
       <div className={style.top}>
         <div className={style.title}>{data.title}</div>
         <div className={style.date_switch}>
-          <div className={style.date_cont}>{date[0]}</div>
-          <div className={style.date_cont}>{date[1]}</div>
-          <div className={style.date_cont}>{date[2]}</div>
+          <div className={style.date_cont}>{arrayDate()[0]}</div>
+          <div className={style.date_cont}>{arrayDate()[1]}</div>
+          <div className={style.date_cont}>{arrayDate()[2]} </div>
         </div>
       </div>
       <div className={style.middle}>
