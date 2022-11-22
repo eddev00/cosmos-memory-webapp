@@ -3,13 +3,15 @@ import github from "../images/github.svg";
 import linkedin from "../images/linkedin.svg";
 import arrow from "../images/arrow.png";
 import "./NavBar.scss";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <h1>Cosmos Memory</h1>
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <h1>Cosmos Memory</h1>
+        </Link>
       </div>
       <div className="socials">
         <h3>Connect with me</h3>

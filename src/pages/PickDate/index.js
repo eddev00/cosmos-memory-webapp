@@ -61,7 +61,7 @@ const PickDate = () => {
         <div
           className={style.proceed}
           onClick={() => {
-            navigate("/DisplayData", { state: { data } });
+            navigate("/DisplayData", { state: { data, today } });
           }}
         >
           Go !

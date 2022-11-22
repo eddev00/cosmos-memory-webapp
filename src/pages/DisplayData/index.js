@@ -6,6 +6,7 @@ const DisplayData = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const data = location.state.data;
+  const today = location.state.today;
 
   const arrayDate = () => {
     const array = data.date.split("-");
@@ -16,11 +17,7 @@ const DisplayData = () => {
     <div className={style.container}>
       <div className={style.top}>
         <div className={style.title}>{data.title}</div>
-        <div className={style.date_switch}>
-          <div className={style.date_cont}>{arrayDate()[0]}</div>
-          <div className={style.date_cont}>{arrayDate()[1]}</div>
-          <div className={style.date_cont}>{arrayDate()[2]} </div>
-        </div>
+        <div className={style.date_switch}>Try again</div>
       </div>
       <div className={style.middle}>
         <div className={style.text}>
