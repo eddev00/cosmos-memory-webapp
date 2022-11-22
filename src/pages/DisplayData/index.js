@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import style from "./index.module.scss";
 import banner from "../../images/ze.png";
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { transition1 } from "../../transition";
+import { Link } from "react-router-dom";
+
 const DisplayData = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -14,10 +18,25 @@ const DisplayData = () => {
   };
 
   return (
-    <div className={style.container}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition1}
+      className={style.container}
+    >
       <div className={style.top}>
         <div className={style.title}>{data.title}</div>
-        <div className={style.date_switch}>Try again</div>
+        <div className={style.date_switch}>
+          <Link
+            style={{ textDecoration: "none", color: "white" }}
+            to={{
+              pathname: "/",
+            }}
+          >
+            Try again
+          </Link>
+        </div>
       </div>
       <div className={style.middle}>
         <div className={style.text}>
@@ -32,7 +51,7 @@ const DisplayData = () => {
         <div className={style.copyright}>{data.copyright}</div>
         <div className={style.date}>{data.date}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
