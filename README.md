@@ -7,7 +7,7 @@ https://cosmos-memory.netlify.app/
 ![](https://github.com/eddev00/cosmos-memory-webapp/blob/main/src/images/demo.gif)
 # My objectives from this project:
 -advancing my front-end skills in design (figma/scss)\
--learn how to handle apis.\
+-learn how to handle API's.\
 -learn how to use react hooks.\
 -learn responsive design.
 
