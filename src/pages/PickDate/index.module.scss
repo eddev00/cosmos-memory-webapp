@@ -39,6 +39,15 @@
     visibility: hidden;
   }
   .proceed{
+    cursor: pointer;
     
+  }
+  img{
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .container{
+    font-size: 4vw;
   }
 }

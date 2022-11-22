@@ -3,11 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  background: black;
-  color: white;
-  border: 1px solid #ffffff;
-  width: 1413px;
-  height: 800px;
-  margin: 50px auto;
+@media only screen and (min-width: 1550px) {
+  .App {
+    background: black;
+    color: white;
+    border: 1px solid #ffffff;
+    width: 1413px;
+    height: 800px;
+    margin: 70px auto;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .App {
+    background: black;
+    color: white;
+    border: 1px solid #ffffff;
+
+    margin: auto auto;
+  }
 }

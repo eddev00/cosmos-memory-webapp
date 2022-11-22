@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.scss";
 import banner from "../../images/ze.png";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 const DisplayData = () => {
   const location = useLocation();
-
+  const navigate = useNavigate();
   const data = location.state.data;
 
   const arrayDate = () => {
     const array = data.date.split("-");
+    return array;
   };
 
   return (
