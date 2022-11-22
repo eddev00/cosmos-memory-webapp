@@ -3,6 +3,7 @@ A web application that cosumes nasa's api(https://api.nasa.gov/) to display the 
 (webapp phone responsiveness not avalaible yet)
 
 # Demo
+https://cosmos-memory.netlify.app/
 ![](https://github.com/eddev00/cosmos-memory-webapp/blob/main/src/images/demo.gif)
 # My objectives from this project:
 -advancing my front-end skills in design (figma/scss)\
