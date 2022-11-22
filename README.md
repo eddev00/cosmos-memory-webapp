@@ -1,3 +1,22 @@
+# Cosmos Memory webapp 
+A web application that cosumes nasa's api(https://api.nasa.gov/) to display the Astronomy Picture of the Day along with a brief explanation written by a professional astronomer.
+(webapp phone responsiveness not avalaible yet)
+
+# Demo
+![](https://github.com/eddev00/cosmos-memory-webapp/blob/main/src/images/demo.gif)
+# My objectives from this project:
+-advancing my front-end skills in design (figma/scss)\
+-learn how to handle apis.\
+-learn how to use react hooks.\
+-learn responsive design.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
